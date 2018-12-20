@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+	<Form Font="Arial,9" Height="400" Id="bride" Left="8" PidAttrib="7" Title="bride" Top="8" Ver="1.1" Width="595" WorkArea="FALSE">
+		<Datasets>
+			<Dataset DataSetType="Dataset" Id="DS_CMMN310">
+				<contents id="DS_CMMN310">
+					<colinfo id="seq" size="255" type="INT"/>
+					<colinfo id="zip" size="255" type="STRING"/>
+					<colinfo id="addrNm1" size="255" type="STRING"/>
+					<colinfo id="addrNm2" size="255" type="STRING"/>
+					<colinfo id="addrNm3" size="255" type="STRING"/>
+					<colinfo id="addrNm4" size="255" type="STRING"/>
+					<colinfo id="addr" size="255" type="STRING"/>
+					<colinfo id="engAddrNm1" size="255" type="STRING"/>
+					<colinfo id="engAddrNm2" size="255" type="STRING"/>
+					<colinfo id="engAddrNm3" size="255" type="STRING"/>
+					<colinfo id="engAddrNm4" size="255" type="STRING"/>
+					<colinfo id="engAddr" size="255" type="STRING"/>
+					<colinfo id="oldZip" size="255" type="STRING"/>
+					<colinfo id="milaf" size="255" type="STRING"/>
+					<colinfo id="inptId" size="255" type="STRING"/>
+					<colinfo id="inptDt" size="255" type="STRING"/>
+					<colinfo id="updtId" size="255" type="STRING"/>
+					<colinfo id="updtDt" size="255" type="STRING"/>
+				</contents>
+			</Dataset>
+		</Datasets>
+		<Static BKColor="#e7eef3" Border="Flat" BorderColor="#abc7d8" Color="#92ca74" Height="30" Id="st1" Left="5" TabOrder="1" Top="5" Width="585"></Static>
+		<edit Height="21" Id="edSearchDongRi" ImeMode="hangul" Left="107" TabOrder="2" Top="10" Width="200"></edit>
+		<Static Height="24" Id="st0" Left="64" TabOrder="3" Text="Budget&#32;:" Top="8" VAlign="Middle" Width="72"></Static>
+		<image Height="9" Id="img26" Left="35" TabOrder="4" Top="15" Width="9"></image>
+		<button ButtonStyle="TRUE" Height="23" Id="btnOk" Left="398" TabOrder="5" Text="Process" Top="367" Width="90"></button>
+		<button ButtonStyle="TRUE" Height="23" Id="btnClose" Left="489" OnClick="btnClose_OnClick" TabOrder="6" Text="Cancel" Top="367" Width="90"></button>
+		<Grid AutoEnter="TRUE" AutoFit="TRUE" AutoFitEndLine="Hide" BindDataset="dsOrdSaod" BkColor2="user32" BoldHead="true" Border="Flat" BorderColor="user11" Bottom="360" Editable="TRUE" Enable="true" EndLineColor="default" Face3dColor="user14" FillArea="TRUE" HeadBorder="Flat" HeadHeight="20" Height="320" Id="grdOrdSaod" InputPanel="FALSE" Left="8" LineColor="user33" MinWidth="100" Right="592" RowHeight="20" Style="x_Grid_mGreen" TabOrder="7" TabStop="true" Top="40" UseDBuff="true" UsePopupMenu="true" UseSelColor="true" Visible="true" VLineColor="default" WheelScrollRow="1" Width="584">
+			<contents>
+				<format id="Default">
+					<columns>
+						<col width="32"/>
+						<col width="256"/>
+					</columns>
+					<head>
+						<cell col="0" color="user15" display="checkbox" edit="checkbox" font="돋움,8,Bold" text="선택"/>
+						<cell col="1" color="user15" display="text" font="돋움,8,Bold" text="제품군&#32;선택"/>
+					</head>
+					<body>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox"/>
+						<cell align="center" col="1" display="text" font="굴림,9" text="세탁기"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="1"/>
+						<cell align="center" col="1" display="text" row="1" text="TV"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="2"/>
+						<cell align="center" col="1" display="text" row="2" text="무선청소기"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="3"/>
+						<cell align="center" col="1" display="text" row="3" text="정수기"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="4"/>
+						<cell align="center" col="1" display="text" row="4" text="다리미"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="5"/>
+						<cell align="center" col="1" display="text" row="5" text="전자레인지"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="6"/>
+						<cell align="center" col="1" display="text" row="6" text="전기밥솥"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="7"/>
+						<cell align="center" col="1" display="text" row="7" text="냉장고"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="8"/>
+						<cell align="center" col="1" display="text" row="8" text="에어컨"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="9"/>
+						<cell align="center" col="1" display="text" row="9" text="공기청정기"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="10"/>
+						<cell align="center" col="1" display="text" row="10" text="김치냉장고"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="11"/>
+						<cell align="center" col="1" display="text" row="11" text="가습기"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="12"/>
+						<cell align="center" col="1" display="text" row="12" text="믹서기"/>
+						<cell align="center" col="0" colid="chkFlag" display="checkbox" edit="checkbox" row="13"/>
+						<cell align="center" col="1" display="text" row="13" text="제습기"/>
+					</body>
+				</format>
+			</contents>
+		</Grid>
+	</Form>
+	<Script><![CDATA[
+function btnClose_OnClick(obj)
+{
+	Close();
+}
+
+function pivOrdSaod_OnCloseUp(obj,varReturn,bSelOk)
+{
+	var tempText = edOrdSaod.Text;
+	edOrdSaod.Text 		= "";
+	edOrdSaod.UserData 	= "";
+
+	var nCnt = 0;
+	
+	for (var i = 0; i < dsOrdSaod.GetRowCount(); i++)
+	{
+		if (dsOrdSaod.GetColumn(i, "chkFlag") == "1")
+		{
+			if(nCnt > 0)
+			{
+				edOrdSaod.Text  		+= ",";
+				// 서버에서 ~ 구분자로 잘라 IN 으로 검색할 것임.
+				edOrdSaod.UserData	+= "~"; 
+			}
+			
+			edOrdSaod.Text 		+= dsOrdSaod.GetColumn(i, "dtlCdAvvrNm");
+			edOrdSaod.UserData 	+= dsOrdSaod.GetColumn(i, "dtlCd");
+			nCnt++;
+		}
+	}
+	SetReg("cro_crewdarqry_m_EFC_ATCL_INFO",edOrdSaod.Text);
+	SetReg("cro_crewdarqry_m_EFC_ATCL_DATA",edOrdSaod.UserData);
+	//데이터가 변경시에 화면을 초기화 해준다.
+	if(tempText != edOrdSaod.Text){
+		fnGridClear();
+	}
+}]]></Script>
+</Window>
